@@ -116,7 +116,7 @@ namespace Dokan
         {
             if (options.VolumeLabel == null)
             {
-                options.VolumeLabel = "DOKAN";
+                options.VolumeLabel = "DOKAN-NET";
             }
             
             Proxy proxy = new Proxy(options, operations);
