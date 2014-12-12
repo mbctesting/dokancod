@@ -40,13 +40,13 @@ namespace Dokan
         public DateTime LastWriteTime;
         public long Length;
         public string FileName;
-        /*
+        
         public FileInformation()
         {
             Attributes = FileAttributes.Normal;
             Length = 0;
         }
-         */
+        
     }
 
     public interface DokanOperations

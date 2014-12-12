@@ -146,7 +146,6 @@ namespace Dokan
             dokanOperations.ReadFile = proxy.ReadFileProxy;
             dokanOperations.WriteFile = proxy.WriteFileProxy;
             dokanOperations.FlushFileBuffers = proxy.FlushFileBuffersProxy;
-            dokanOperations.GetFileInformation = proxy.GetFileInformationProxy;
             dokanOperations.FindFiles = proxy.FindFilesProxy;
             dokanOperations.SetFileAttributes = proxy.SetFileAttributesProxy;
             dokanOperations.SetFileTime = proxy.SetFileTimeProxy;
