@@ -114,6 +114,10 @@ namespace Dokan
 
         public static int DokanMain(DokanOptions options, DokanOperations operations)
         {
+			if (options == null)
+			{
+				return;
+			}
             if (options.VolumeLabel == null)
             {
                 options.VolumeLabel = "DOKAN-NET";
