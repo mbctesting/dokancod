@@ -45,3 +45,8 @@ to unmount a drive.
 
    > dokanctl.exe /u DriveLetter
 
+
+Thanks
+======
+
+Thanks for all the information of Dokan project
