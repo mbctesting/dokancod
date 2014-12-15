@@ -41,6 +41,8 @@ namespace Dokan
         public long Length;
         public string FileName;
         
+		// change made by me
+		
         public FileInformation()
         {
             Attributes = FileAttributes.Normal;
