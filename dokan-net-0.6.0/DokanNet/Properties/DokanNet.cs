@@ -118,14 +118,15 @@ namespace Dokan
 			{
 				return;
 			}
-            if (options.VolumeLabel == null)
+
+			DOKAN_OPTIONS dokanOptions = new DOKAN_OPTIONS();
+
+			if (options.VolumeLabel == null)
             {
                 options.VolumeLabel = "DOKAN-NET";
             }
             
             Proxy proxy = new Proxy(options, operations);
-
-            DOKAN_OPTIONS dokanOptions = new DOKAN_OPTIONS();
 
             dokanOptions.Version = options.Version;
             if (dokanOptions.Version == 0)
