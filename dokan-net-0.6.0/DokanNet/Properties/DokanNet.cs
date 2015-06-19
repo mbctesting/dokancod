@@ -126,13 +126,13 @@ namespace Dokan
                 options.VolumeLabel = "DOKAN-NET";
             }
             
-            Proxy proxy = new Proxy(options, operations);
-
             dokanOptions.Version = options.Version;
-            if (dokanOptions.Version == 0)
+            if (dokanOptions.Version == 1)
             {
                 dokanOptions.Version = DOKAN_VERSION;
             }
+            Proxy proxy = new Proxy(options, operations);
+
             dokanOptions.MountPoint = options.MountPoint;
             dokanOptions.ThreadCount = options.ThreadCount;
             dokanOptions.Options |= options.DebugMode ? DOKAN_OPTION_DEBUG : 0;
