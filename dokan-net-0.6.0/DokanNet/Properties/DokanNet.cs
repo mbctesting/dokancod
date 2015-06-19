@@ -133,6 +133,7 @@ namespace Dokan
             {
                 dokanOptions.Version = DOKAN_VERSION;
             }
+            dokanOptions.MountPoint = options.MountPoint;
             dokanOptions.ThreadCount = options.ThreadCount;
             dokanOptions.Options |= options.DebugMode ? DOKAN_OPTION_DEBUG : 0;
             dokanOptions.Options |= options.UseStdErr ? DOKAN_OPTION_STDERR : 0;
@@ -140,7 +141,6 @@ namespace Dokan
             dokanOptions.Options |= options.UseKeepAlive ? DOKAN_OPTION_KEEP_ALIVE : 0;
             dokanOptions.Options |= options.NetworkDrive ? DOKAN_OPTION_NETWORK : 0;
             dokanOptions.Options |= options.RemovableDrive ? DOKAN_OPTION_REMOVABLE : 0;
-            dokanOptions.MountPoint = options.MountPoint;
 
             DOKAN_OPERATIONS dokanOperations = new DOKAN_OPERATIONS();
             dokanOperations.CreateFile = proxy.CreateFileProxy;
