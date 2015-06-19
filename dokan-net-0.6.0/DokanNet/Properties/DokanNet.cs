@@ -120,6 +120,10 @@ namespace Dokan
 			}
 
 			DOKAN_OPTIONS dokanOptions = new DOKAN_OPTIONS();
+            if (dokanOptions.Version == 0)
+            {
+                dokanOptions.Version = DOKAN_VERSION;
+            }
 
 			if (options.VolumeLabel == null)
             {
@@ -127,10 +131,6 @@ namespace Dokan
             }
             
             dokanOptions.Version = options.Version;
-            if (dokanOptions.Version == 1)
-            {
-                dokanOptions.Version = DOKAN_VERSION;
-            }
             Proxy proxy = new Proxy(options, operations);
 
             dokanOptions.MountPoint = options.MountPoint;
