@@ -266,6 +266,7 @@ namespace RegistoryFS
             opt.MountPoint = "r:\\";
             opt.DebugMode = true;
             opt.UseStdErr = true;
+            opt.RunTest = true;
             opt.VolumeLabel = "RFS";
             int status = DokanNet.DokanMain(opt, new RFS());
             switch (status)

@@ -17,6 +17,7 @@ namespace Dokan
         public bool RemovableDrive;
         public string VolumeLabel;
         public string MountPoint;
+        public bool RunTest;
     }
 
 
@@ -111,6 +112,7 @@ namespace Dokan
         private const uint DOKAN_OPTION_KEEP_ALIVE = 8;
         private const uint DOKAN_OPTION_NETWORK = 16;
         private const uint DOKAN_OPTION_REMOVABLE = 32;
+        private const uint DOKAN_OPTION_RUN_TEST = 64;
 
         public static int DokanMain(DokanOptions options, DokanOperations operations)
         {
@@ -141,6 +143,7 @@ namespace Dokan
             dokanOptions.Options |= options.UseKeepAlive ? DOKAN_OPTION_KEEP_ALIVE : 0;
             dokanOptions.Options |= options.NetworkDrive ? DOKAN_OPTION_NETWORK : 0;
             dokanOptions.Options |= options.RemovableDrive ? DOKAN_OPTION_REMOVABLE : 0;
+            dokanOptions.Options |= options.RunTest ? DOKAN_OPTION_RUN_TEST : 0;
 
             DOKAN_OPERATIONS dokanOperations = new DOKAN_OPERATIONS();
             dokanOperations.CreateFile = proxy.CreateFileProxy;
