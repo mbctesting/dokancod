@@ -64,29 +64,6 @@ namespace Dokan
     }
 
 
-    class Dokan
-    {
-        [DllImport("dokan.dll")]
-        public static extern int DokanMain(ref DOKAN_OPTIONS options, ref DOKAN_OPERATIONS operations);
-
-        [DllImport("dokan.dll")]
-        public static extern int DokanUnmount(int driveLetter);
-
-        [DllImport("dokan.dll")]
-        public static extern int DokanRemoveMountPoint(
-            [MarshalAs(UnmanagedType.LPWStr)] string mountPoint);
-
-        [DllImport("dokan.dll")]
-        public static extern uint DokanVersion();
-
-        [DllImport("dokan.dll")]
-        public static extern uint DokanDriveVersion();
-
-        [DllImport("dokan.dll")]
-        public static extern bool DokanResetTimeout(uint timeout, ref DOKAN_FILE_INFO rawFileInfo);
-    }
-
-
     public class DokanNet
     {
         public const int ERROR_FILE_NOT_FOUND       = 2;
