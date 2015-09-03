@@ -90,6 +90,7 @@ namespace Dokan
     {
         public const int ERROR_FILE_NOT_FOUND       = 2;
         public const int ERROR_PATH_NOT_FOUND       = 3;
+        public const int ERROR_USER_NOT_FOUND       = 4;
         public const int ERROR_ACCESS_DENIED        = 5;
         public const int ERROR_SHARING_VIOLATION    = 32;
         public const int ERROR_INVALID_NAME         = 123;
