@@ -9,6 +9,10 @@ namespace Microsoft.CSharp.RuntimeBinder.Semantics
         public EXPR GetArray() { return _Array; }
         public void SetArray(EXPR value) { _Array = value; }
 
+        private EXPR _Char;
+        public EXPR GetChar() { return _Char; }
+        public void SetChar(EXPR value) { _Char = value; }
+        
         private EXPR _Index;
         public EXPR GetIndex() { return _Index; }
         public void SetIndex(EXPR value) { _Index = value; }
