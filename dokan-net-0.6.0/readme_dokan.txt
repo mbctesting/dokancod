@@ -6,6 +6,9 @@
 Introduction
 ============
 
+We're going to use the Dokan Library in order to explain the use of 
+the Plastic SCM GitSync feature.
+
 
 What is Dokan.NET Binding
 =========================
